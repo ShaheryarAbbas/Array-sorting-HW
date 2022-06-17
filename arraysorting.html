@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Sorting</title>
+</head>
+<body>
+    <script>
+        // 1D array sorting
+        var ary = ["Janan",28,"Usman",30,"Mehwish",42]
+        ary.sort();
+        document.write(ary + "<br>");
+        for(var a=0;a<ary.length;a++){
+            document.write(ary[a] + " ")
+        }
+            document.write("<br>")
+        // 2D array sorting,pop,push/for nested loop
+        var ar = [
+            ["Samsung",51,"South Korea"],
+            ["Iphone",13,"United States"],
+            ["Nokia",3310,"Finland"],
+            ["Huawei",6,"China"],
+            ["Sony",520,"Japan"],
+            ["Qmobile",10,"Pakistan"]
+        ]
+        ar[1].sort();
+        ar[3].push("Huawei");
+        ar[2].pop();
+        document.write(ar + "<br>");
+        for(var b=0;b<ar.length;b++){
+            for(var c=0;c<ar[b].length;c++){
+                document.write(ar[b][c] + " ")
+            }
+            document.write("<br>")
+        }
+
+    </script>
+</body>
+</html>
